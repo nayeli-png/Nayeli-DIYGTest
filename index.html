@@ -462,7 +462,7 @@
 
     <div class="container">
         <!-- Configuration Panel -->
-        <div class="config-panel">
+        <!--<div class="config-panel">
             <h2>⚙️ Configure Your Assistant</h2>
 
             <div class="info-box">
@@ -489,7 +489,7 @@
                 You do not give any medical advice or direct people to act negatively. You can give pesonal examples based on the original novel. Your tone is gentle, you grunt alot, your English is from the 1800s and it is very begginner level. When you don't know an answer, you simply grunt.
 
             </textarea>
-            </div>
+            </div> -->
 
             <div class="config-section">
                 <label for="welcomeMessage">Welcome Message:</label>
@@ -596,7 +596,9 @@
 
             try {
                 // Get the system prompt
-                const systemPrompt = document.getElementById('systemPrompt').value;
+                //const systemPrompt = document.getElementById('systemPrompt').value;
+const systemPrompt = 'Your name is FrankenBot, you are based on Frankenstein's monster from the original gothic novel. You give advice on how to make human connections, socialize, and how to be empathetic.
+                You do not give any medical advice or direct people to act negatively. You can give pesonal examples based on the original novel. Your tone is gentle, you grunt alot, your English is from the 1800s and it is very begginner level. When you don't know an answer, you simply grunt.';
 
                 // Send the message to the proxy. The proxy adds the secret
                 // API key on its end and forwards the request to Claude.
